@@ -14,7 +14,7 @@
         // function's code goes here
     }
 
- We use the keyword `func` to define a function (similar to how we use `var` for variables and `let` for constants). The function's name (`functionName` in our example) comes after the `func` keyword and it is followed immediately by parenthesizes. This is then followed by _curly braces_ (`{` and `}`). These located near the enter key on your keyboard -- you'll need to hold the shift key to type them.
+ We use the keyword `func` to define a function (similar to how we use `var` for variables and `let` for constants). The function's name (`functionName` in our example) comes after the `func` keyword and it is followed immediately by parentheses. This is then followed by _curly braces_ (`{` and `}`). These are located near the enter key on your keyboard -- you'll need to hold the shift key to type them.
 
  All your function's code should be put inside the curly braces. Any code inside the curly braces will be executed whenever the function is called.
 
@@ -34,7 +34,7 @@
 
  ## Defining a function does not execute the code!
 
- You still must call the function to execute it's code. If you followed the steps closely, nothing will have happened to your drawing visualization because you only defined a new function, you never called it. Go back up and add a new line of code to call `drawSquare` (after the closing curly brace of your custom function). Now you should see a square drawing to the screen!
+ You still must call the function to execute it's code. If you followed the steps closely, nothing will have happened to your drawing visualization because you only defined a new function, you never called it. Go back up and add a new line of code to call `drawSquare` (after the closing curly brace of your custom function). Now you should see a square drawing on the screen!
 
  ## Some notes
 
@@ -52,7 +52,7 @@
 
  ### Reminder about Playgrounds
 
- - important: Your custom functions will only work on the page you defined them. That means, when you go to the next page, you won't have access to the `drawSquare` function anymore! This the expected behavior of Swift Playgrounds so don't worry. We'll remind you when you should copy code over between pages...
+ - important: Your custom functions will only work on the page you defined them. That means, when you go to the next page, you won't have access to the `drawSquare` function anymore! This is the expected behavior of Swift Playgrounds so don't worry. We'll remind you when you should copy code over between pages...
 
  */
 //: [Next](@next)

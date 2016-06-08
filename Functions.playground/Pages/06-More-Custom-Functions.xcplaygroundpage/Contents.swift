@@ -5,7 +5,7 @@
 
  ## Function parameters
 
- Have you been wondering why there are parenthesizes after function calls? It's not just so they look different from variables. It's because you can sometimes pass data to functions!
+ Have you been wondering why there are parentheses after function calls? It's not just so they look different from variables. It's because you can sometimes pass data to functions!
 
  So far, we have been using hardcoded `moveFifty()` and `rotateNinety()` functions. While this works, wouldn't it be nicer to be able to say `move(75)`? Try it out below!
 
@@ -21,17 +21,19 @@
 
  ## Recap
  
- We can call both `move(50)` and `rotate(90)` to get the same outcome as `moveFifty()` and `rotateNinety()`. You can put _any_ whole number in the parenthesizes and move custom amounts! The value we put in the parenthesizes is a _function parameter_.
+ We can call both `move(50)` and `rotate(90)` to get the same outcome as `moveFifty()` and `rotateNinety()`. You can put _any_ whole number in the parentheses and move custom amounts! The value we put in the parentheses is a _function parameter_.
  
  ## Pseudocoding
 
- Let's beef up our polygon drawing skills. Get out some pen and paper. We'll be writing some pseudocode before we type out any Swift code.
+ Let's beef up our polygon drawing skills. Get out a pen and some paper. We'll be writing some pseudocode before we type out any Swift code.
 
  Go through the same exercise we did for squares but do it for triangles (3 sides), pentagons (5 sides), and hexagons (6 sides):
 
- - callout(Plan your code): Draw the polygon with pen and paper. How would you use the `move` and `rotate` functions to draw a draw that polygon? Write it out each step with pen and paper. Read back each line of code to yourself and "perform" each function by hand. Did it work?
+ - callout(Plan your code): Draw the polygon with pen and paper. How would you use the `move` and `rotate` functions to draw that polygon? Write out each step. Read back each line of code to yourself and "perform" each function by hand. Did it work?
 
- - callout(Hint): Here's a little hint for those of you who haven't thought about geometry in a while. The angle you rotate is called the polygon's exterior angle. You can calculate a polygons exterior angle with the equation `exteriorAngle = 360 / numberOfSides`. You'll notice `360 / 4 = 90` which was correct for a square -- try it out on a few other polygons to confirm this should work!
+ - callout(Hint): Here's a little hint for those of you who haven't thought about geometry in a while. The angle you rotate is called the polygon's exterior angle. The exterior angle is the angle formed from the extension of one side to the extension of another.
+ 
+    You can calculate a polygons exterior angle with the equation `exteriorAngle = 360 / numberOfSides`. You'll notice `360 / 4 = 90` which was correct for a square -- try it out on a few other polygons to confirm this should work!
 
  ## drawTriangle, drawPentagon, drawHexagon
 

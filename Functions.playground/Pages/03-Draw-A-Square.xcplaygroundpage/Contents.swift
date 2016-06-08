@@ -17,13 +17,13 @@
 
  ## Pseudocode
 
- Did you actually do the above exercise? If not, go back to _Planning your code_ and do it. We're working to instill good habits in you as you learn to code!
+ Did you actually do the above exercise? If not, go back to _Plan your code_ and do it. We're working to instill good habits in you as you learn to code!
 
  Planning out code on paper or a whiteboard is generally called _pseudocoding_. The purpose of _pseudocoding_ is not to write perfect, syntactically-correct code. In fact, it's better if you don't hold yourself back by trying to get everything perfect. _Psuedocoding_ is a planning exercise for coding. It helps you make a plan before you get started coding. Most people would agree that you shouldn't take a road trip without some sort of navigation --  coding is the same! Make sure you have a rough idea of where you're going before you start typing.
 
  ## Coding time!
 
- - callout(Challenge): Now that you're pretty sure you have some working pseudocode, it's time to put it to the test... Try out the procedure you created in the space below. Remember, this is real coding again -- syntax matters! Each function call should be on a separate line and don't forget the parenthesizes.
+ - callout(Challenge): Now that you're pretty sure you have some working pseudocode, it's time to put it to the test... Try out the procedure you created in the space below. Remember, this is real coding again -- syntax matters! Each function call should be on a separate line and don't forget the parentheses.
 
  */
 

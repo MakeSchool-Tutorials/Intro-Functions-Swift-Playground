@@ -23,19 +23,6 @@
   - important: _Make sure each function call is on a separate line and don't forget the parentheses!_
  
  */
-
-
-
-
-
-
-
-
-
-
-
-
-
 //: [Next](@next)
 
 

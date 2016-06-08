@@ -5,7 +5,7 @@
 
  ## A quick intro to "loops"
 
- Now that you've rewritten you polygon functions a few times, you may have started to see a general pattern for drawing polygons. Grab your pen and paper again, let's see if we can reduce the number of lines of code we are using.
+ Now that you've rewritten your polygon functions a few times, you may have started to see a general pattern for drawing polygons. Grab your pen and paper again, let's see if we can reduce the number of lines of code we are using.
 
  This time, see if you can rewrite each of your draw functions (`drawTriangle`, `drawSquare`, `drawPentagon`, and `drawHexagon`) so that they only reference `move` and `rotate` once each. How can you do this? We're going to add a new tool to your pseudocode toolbox: repeat _x_ times.
 

@@ -65,7 +65,9 @@
  
  you are using a shorthand for:
  
-    func drawPolygon(numberOfSides: Int, sideLength sideLength: Int)
+    func drawPolygon(_ numberOfSides: Int, sideLength sideLength: Int)
+ 
+ - hint: `_` is the way of specifying no label is required.
  
  ## More control over parameter labels
  

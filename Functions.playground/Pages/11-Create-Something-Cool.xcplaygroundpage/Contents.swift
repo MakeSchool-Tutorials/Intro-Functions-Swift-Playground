@@ -27,7 +27,7 @@
  
  - callout(Set color of pen): setColor(red red: Double, green: Double, blue: Double)
  
- - note: This is called with labels for all 3 parameters! Each value should be between 0 and 1. eg. `setColor(red: 1.0, green: 1.0, blue: 1.0)` would change the pen to be white.
+ - note: This is called with labels for all 3 parameters! Each value should be between 0 and 1. eg. `setColor(red: 0.0, green: 0.0, blue: 0.0)` would change the pen to be black. `setColor(red: 1.0, green: 0.0, blue: 0.0)` would change the pen to be red. 
  
  - callout(Set thickness of pen): setThickness(thickness: Double)
  
@@ -119,8 +119,11 @@
 
 
 
-//: - callout(This is setup code to make the live visualization work!
-Pen.delay = 2
+
+
+
+//: This is setup code to make the live visualization work!
+Pen.delay = 0.1
 import XCPlayground
 import Foundation
 let results = DrawingScene.setup()
