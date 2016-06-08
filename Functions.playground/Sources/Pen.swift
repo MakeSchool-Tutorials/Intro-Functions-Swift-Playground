@@ -31,7 +31,7 @@ public class Pen {
     public var penIsDown = true
     public var speed: useconds_t = 50000
     public var position = CGPoint(x: 160, y: 288)
-    public var rotation: CGFloat = 0.0
+    public var rotation: CGFloat = CGFloat(M_PI)
     
     var shapeNodes = [ShapeNodeData?]()
     
