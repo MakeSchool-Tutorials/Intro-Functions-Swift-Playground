@@ -41,7 +41,7 @@ public func moveToX(x: Int, y: Int) {
     }
 }
 
-public func moveToX(x: Double, y: Double) {
+public func moveTo(x x: Double, y: Double) {
     dispatch_async(queue) { () -> Void in
         delay()
         Pen.sharedInstance.moveTo(x: x, y: y)

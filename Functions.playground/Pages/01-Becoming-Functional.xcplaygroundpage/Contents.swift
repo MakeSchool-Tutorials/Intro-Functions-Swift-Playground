@@ -1,4 +1,3 @@
-//: [Previous](@previous)
 /*:
 
  # Becoming Functional
@@ -14,7 +13,7 @@
 
 */
 
-moveFifty()
+
 
 /*:
 

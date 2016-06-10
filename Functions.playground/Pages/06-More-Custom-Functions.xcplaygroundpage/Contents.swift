@@ -33,7 +33,7 @@
 
  - callout(Hint): Here's a little hint for those of you who haven't thought about geometry in a while. The angle you rotate is called the polygon's exterior angle. The exterior angle is the angle formed from the extension of one side to the extension of another.
  
-    You can calculate a polygons exterior angle with the equation `exteriorAngle = 360 / numberOfSides`. You'll notice `360 / 4 = 90` which was correct for a square -- try it out on a few other polygons to confirm this should work!
+    You can calculate a polygon's exterior angle with the equation exteriorAngle = 360 / numberOfSides. You'll notice `360 / 4 = 90` which was correct for a square -- try it out on a few other polygons to confirm this should work!
 
  ## drawTriangle, drawPentagon, drawHexagon
 

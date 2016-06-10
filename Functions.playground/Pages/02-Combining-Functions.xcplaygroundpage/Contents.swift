@@ -1,7 +1,7 @@
 //: [Previous](@previous)
 /*:
  
- # Combining Funcition Calls
+ # Combining Function Calls
  ## Rotate by ninety degrees
  
  Let's try a new function: `rotateNinety`. Remember, function calls are followed by parentheses! Enter the following line of code and watch the visualization to see what happens!

@@ -85,7 +85,7 @@
  
  Or you could tell Swift you do not want a label for a parameter by defining your function with the format:
 
-    drawPolygon(numberOfSides: 3, _ sideLength: 100)
+    drawPolygon(numberOfSides: Int, _ sideLength: Int)
  
  This would be called with:
  

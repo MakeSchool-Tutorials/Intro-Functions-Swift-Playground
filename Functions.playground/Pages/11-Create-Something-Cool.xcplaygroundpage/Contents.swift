@@ -19,7 +19,7 @@
  
  - callout(Move directly to coordinates): moveTo(x x: Int, y: Int)
  
- - note: This is called with labels for both parameters! eg. `moveTo(x: 10, y: 40)`
+ - note: This is called with labels for both parameters! eg. `moveTo(x x: 10, y: 40)`
  
  - callout(Rotate heading by an angle): rotate(degrees: Int)
  
