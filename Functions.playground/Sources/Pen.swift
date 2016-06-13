@@ -87,6 +87,10 @@ public class Pen {
     }
     
     public func rotate(degrees: Int) {
+        rotate(Double(degrees))
+    }
+    
+    public func rotate(degrees: Double) {
         rotation = rotation + CGFloat(degrees).degreesToRadians()
         let limit = π * 2
         if rotation > limit {

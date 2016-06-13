@@ -53,6 +53,10 @@ public func rotateNinety() {
 }
 
 public func rotate(degrees: Int) {
+    rotate(Double(degrees))
+}
+
+public func rotate(degrees: Double) {
     dispatch_async(queue) { () -> Void in
         delay()
         Pen.sharedInstance.rotate(degrees)
