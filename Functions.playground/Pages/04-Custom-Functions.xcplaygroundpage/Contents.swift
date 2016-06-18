@@ -14,7 +14,7 @@
         // function's code goes here
     }
 
- We use the keyword `func` to define a function (similar to how we use `var` for variables and `let` for constants). The function's name (`functionName` in our example) comes after the `func` keyword and it is followed immediately by parentheses. This is then followed by _curly braces_ (`{` and `}`). These are located near the enter key on your keyboard -- you'll need to hold the shift key to type them.
+ We use the keyword `func` to define a function (similar to how we use `var` for variables and `let` for constants). The function's name (`functionName` in our example) comes after the `func` keyword and it is followed immediately by parentheses. This is then followed by This is then followed by matched curly braces `{` and `}`. These are located near the enter key on your keyboard -- you'll need to hold the shift key to type them.
 
  All your function's code should be put inside the curly braces. Any code inside the curly braces will be executed whenever the function is called.
 

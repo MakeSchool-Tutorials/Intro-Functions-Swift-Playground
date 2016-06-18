@@ -36,7 +36,7 @@
 
  If you compare this to the earlier functions we defined, you'll see the difference is the parameter name and type inside of the parentheses. It starts off with the same keyword `func`, followed by the function name, parentheses and curly braces. Remember, anything "inside" the curly braces gets indented once (one press of the tab key if Xcode doesn't do it for you automatically).
 
- A lot like the variables we defined before, parameters must specify their data type and you cannot call a function with anything of a different type. Parameter names are a similar to variable names -- they should be concise and descriptive. Another programmer should know what they are going to be used for just by looking at their name.
+ A lot like the variables we defined before, parameters must specify their data type and you cannot call a function with anything of a different type. Parameter names are similar to variable names -- they should be concise and descriptive. Another programmer should know what they are going to be used for just by looking at their name.
 
  ### Quick review of data types
 
