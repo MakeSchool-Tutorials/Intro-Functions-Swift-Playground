@@ -1,6 +1,5 @@
-//: [Previous](@previous)
 /*:
-
+ ![Make School Banner](./swift_banner.png)
  # Passing data to functions
 
  ## Function parameters
@@ -52,7 +51,7 @@
 
 
 
-//: [Next](@next)
+//: [Previous](@previous) | [Next](@next)
 
 
 
@@ -107,4 +106,4 @@ Pen.delay = 2
 import XCPlayground
 import Foundation
 let results = DrawingScene.setup()
-XCPlaygroundPage.currentPage.liveView = results
+XCPlaygroundPage.current

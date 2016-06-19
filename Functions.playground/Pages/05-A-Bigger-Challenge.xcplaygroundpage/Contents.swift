@@ -1,6 +1,5 @@
-//: [Previous](@previous)
 /*:
- 
+ ![Make School Banner](./swift_banner.png)
  # A "bigger" challenge
  
  ## Drawing a bigger square
@@ -26,7 +25,7 @@
 
 
 
-//: [Next](@next)
+//: [Previous](@previous) | [Next](@next)
 
 
 
@@ -93,4 +92,4 @@ Pen.delay = 2
 import XCPlayground
 import Foundation
 let results = DrawingScene.setup()
-XCPlaygroundPage.currentPage.liveView = results
+XCPlaygroundPage.current

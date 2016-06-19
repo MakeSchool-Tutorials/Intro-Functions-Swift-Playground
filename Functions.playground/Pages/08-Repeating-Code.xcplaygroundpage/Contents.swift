@@ -1,6 +1,5 @@
-//: [Previous](@previous)
 /*:
-
+ ![Make School Banner](./swift_banner.png)
  # Repeating Code
 
  ## A quick intro to "loops"
@@ -62,7 +61,7 @@
  - callout(Hint): Your triangle `drawTriangle` function should use `1...3` in the _for-loop_ syntax above. Your `drawSquare` function should use `1...4`
  
  */
-//: [Next](@next)
+//: [Previous](@previous) | [Next](@next)
 
 
 
@@ -117,4 +116,4 @@ Pen.delay = 2
 import XCPlayground
 import Foundation
 let results = DrawingScene.setup()
-XCPlaygroundPage.currentPage.liveView = results
+XCPlaygroundPage.current

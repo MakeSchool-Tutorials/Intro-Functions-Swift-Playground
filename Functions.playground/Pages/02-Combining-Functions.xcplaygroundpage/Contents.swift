@@ -1,6 +1,5 @@
-//: [Previous](@previous)
 /*:
- 
+ ![Make School Banner](./swift_banner.png)
  # Combining Function Calls
  ## Rotate by ninety degrees
  
@@ -23,7 +22,7 @@
   - important: _Make sure each function call is on a separate line and don't forget the parentheses!_
  
  */
-//: [Next](@next)
+//: [Previous](@previous) | [Next](@next)
 
 
 
@@ -78,4 +77,4 @@ Pen.delay = 2
 import XCPlayground
 import Foundation
 let results = DrawingScene.setup()
-XCPlaygroundPage.currentPage.liveView = results
+XCPlaygroundPage.current

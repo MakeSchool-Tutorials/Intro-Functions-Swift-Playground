@@ -1,7 +1,6 @@
 import Foundation
-//: [Previous](@previous)
 /*:
-
+ ![Make School Banner](./swift_banner.png)
  # Returning data
 
  ## Return values
@@ -80,7 +79,7 @@ let twoPiRadiansInDegrees = radiansToDegrees(2 * M_PI)
 
 //: - callout(Hint): Remember that you will need to _cast_ `sides` from an `Int` to a `Double`. Swift is very specific about types! You can _cast_ or convert it with `Double(sides)`.
 //:
-//: [Next](@next)
+//: [Previous](@previous)
 
 
 
@@ -135,4 +134,4 @@ Pen.delay = 2
 import XCPlayground
 import Foundation
 let results = DrawingScene.setup()
-XCPlaygroundPage.currentPage.liveView = results
+XCPlaygroundPage.current

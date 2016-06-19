@@ -1,6 +1,5 @@
-//: [Previous](@previous)
 /*:
-
+ ![Make School Banner](./swift_banner.png)
  # Passing Even More Data to Functions
 
  ## Even more parameters
@@ -92,7 +91,7 @@
     drawPolygon(3, 100)
  
  */
-//: [Next](@next)
+//: [Previous](@previous) | [Next](@next)
 
 
 
@@ -147,4 +146,4 @@ Pen.delay = 2
 import XCPlayground
 import Foundation
 let results = DrawingScene.setup()
-XCPlaygroundPage.currentPage.liveView = results
+XCPlaygroundPage.current

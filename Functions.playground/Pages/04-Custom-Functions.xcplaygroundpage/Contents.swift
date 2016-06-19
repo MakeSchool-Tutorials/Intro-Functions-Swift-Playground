@@ -1,6 +1,5 @@
-//: [Previous](@previous)
 /*:
-
+ ![Make School Banner](./swift_banner.png)
  # Custom Functions
 
  Let's try creating our own, custom function. We just developed a procedure for drawing a square, wouldn't it be nice to have a `drawSquare()` function?
@@ -55,7 +54,7 @@
  - important: Your custom functions will only work on the page you defined them. That means, when you go to the next page, you won't have access to the `drawSquare` function anymore! This is the expected behavior of Swift Playgrounds so don't worry. We'll remind you when you should copy code over between pages...
 
  */
-//: [Next](@next)
+//: [Previous](@previous) | [Next](@next)
 
 
 
@@ -110,4 +109,4 @@ Pen.delay = 2
 import XCPlayground
 import Foundation
 let results = DrawingScene.setup()
-XCPlaygroundPage.currentPage.liveView = results
+XCPlaygroundPage.current

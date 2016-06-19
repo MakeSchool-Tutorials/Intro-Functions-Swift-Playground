@@ -1,5 +1,5 @@
 /*:
-
+ ![Make School Banner](./swift_banner.png)
  # Becoming Functional
  ## An Introduction to Functions
 
