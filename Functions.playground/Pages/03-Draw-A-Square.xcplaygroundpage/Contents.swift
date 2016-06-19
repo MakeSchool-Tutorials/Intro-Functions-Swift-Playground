@@ -92,4 +92,4 @@ Pen.delay = 2
 import XCPlayground
 import Foundation
 let results = DrawingScene.setup()
-XCPlaygroundPage.current
+XCPlaygroundPage.currentPage.liveView = results

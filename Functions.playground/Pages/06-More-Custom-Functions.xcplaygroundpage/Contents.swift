@@ -1,4 +1,4 @@
-/*:
+Page.liveView = results/*:
  ![Make School Banner](./swift_banner.png)
  # Passing data to functions
 
@@ -19,9 +19,9 @@
 /*:
 
  ## Recap
- 
+
  We can call both `move(50)` and `rotate(90)` to get the same outcome as `moveFifty()` and `rotateNinety()`. You can put _any_ whole number in the parentheses and move custom amounts! The value we put in the parentheses is a _function parameter_.
- 
+
  ## Pseudocoding
 
  Let's beef up our polygon drawing skills. Get out a pen and some paper. We'll be writing some pseudocode before we type out any Swift code.
@@ -31,7 +31,7 @@
  - callout(Plan your code): Draw the polygon with pen and paper. How would you use the `move` and `rotate` functions to draw that polygon? Write out each step. Read back each line of code to yourself and "perform" each function by hand. Did it work?
 
  - callout(Hint): Here's a little hint for those of you who haven't thought about geometry in a while. The angle you rotate is called the polygon's exterior angle. The exterior angle is the angle formed from the extension of one side to the extension of another.
- 
+
     You can calculate a polygon's exterior angle with the equation exteriorAngle = 360 / numberOfSides. You'll notice `360 / 4 = 90` which was correct for a square -- try it out on a few other polygons to confirm this should work!
 
  ## drawTriangle, drawPentagon, drawHexagon
@@ -106,4 +106,4 @@ Pen.delay = 2
 import XCPlayground
 import Foundation
 let results = DrawingScene.setup()
-XCPlaygroundPage.current
+XCPlaygroundPage.currentPage.liveView = results
