@@ -13,7 +13,7 @@ func delay() {
 func delayStart() {
     if !firstCommand { return }
     dispatch_async(queue) { () -> Void in
-        usleep(UInt32(2.0 * Double(USEC_PER_SEC)))
+        usleep(UInt32(5.0 * Double(USEC_PER_SEC)))
     }
     firstCommand = false
 }
