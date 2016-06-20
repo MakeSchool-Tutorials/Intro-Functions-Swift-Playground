@@ -1,4 +1,4 @@
-Page.liveView = results/*:
+/*:
  ![Make School Banner](./swift_banner.png)
  # Passing data to functions
 
