@@ -79,7 +79,7 @@ let twoPiRadiansInDegrees = radiansToDegrees(2 * M_PI)
 
 //: - callout(Hint): Remember that you will need to _cast_ `sides` from an `Int` to a `Double`. Swift is very specific about types! You can _cast_ or convert it with `Double(sides)`.
 //:
-//: [Previous](@previous)
+//: [Previous](@previous) | [Next](@next)
 
 
 
