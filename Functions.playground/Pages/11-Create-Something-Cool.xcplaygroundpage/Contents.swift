@@ -31,8 +31,7 @@
  - callout(Set thickness of pen): `setThickness(thickness: Double)`
  
  */
-
-
+//: [Previous](@previous)
 
 
 
