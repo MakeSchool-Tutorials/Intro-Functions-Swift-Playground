@@ -66,7 +66,7 @@
 
     func drawPolygon(_ numberOfSides: Int, sideLength sideLength: Int)
 
- - hint: `_` is the way of specifying no label is required.
+ - callout(Hint): `_` is the way of specifying no label is required.
 
  ## More control over parameter labels
 
