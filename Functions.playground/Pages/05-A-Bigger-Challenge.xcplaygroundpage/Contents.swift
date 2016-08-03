@@ -13,16 +13,21 @@
  */
 
 
-
-
-
-
-
-
-
-
-
-
+func drawBigSquare() {
+    moveFifty()
+    moveFifty()
+    rotateNinety()
+    moveFifty()
+    moveFifty()
+    rotateNinety()
+    moveFifty()
+    moveFifty()
+    rotateNinety()
+    moveFifty()
+    moveFifty()
+    rotateNinety()
+}
+drawBigSquare()
 
 
 //: [Previous](@previous) | [Next](@next)

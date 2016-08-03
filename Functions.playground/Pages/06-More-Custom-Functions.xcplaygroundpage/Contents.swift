@@ -14,7 +14,17 @@
 
 */
 
-
+// This is mostly a personal exploration area for students.
+// I have drawn a triangle below and shown you can actually
+// move & rotate negative amounts.
+//move(75)
+//rotate(120)
+//move(75)
+//rotate(120)
+//move(75)
+//rotate(120)
+//rotate(-90)
+//move(-100)
 
 /*:
 
@@ -41,15 +51,52 @@
  - callout(Challenge): Once you have functioning pseudocode for each of the polygons, take the time to translate your planned procedures into Swift. Define the `drawTriangle`, `drawPentagon`, and `drawHexagon` functions below. Make sure to test them!
 
 */
+// Brute force solution
+func drawTriangle() {
+    move(75)
+    rotate(120)
+    move(75)
+    rotate(120)
+    move(75)
+    rotate(120)
+}
 
+// Brute force solution
+func drawPentagon() {
+    move(75)
+    rotate(72)
+    move(75)
+    rotate(72)
+    move(75)
+    rotate(72)
+    move(75)
+    rotate(72)
+    move(75)
+    rotate(72)
+}
 
+// Clean force solution -- makes it easy to modify side length
+// and rotation!
+func drawHexagon() {
+    let sideLength = 75
+    let rotation = 60
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+}
 
-
-
-
-
-
-
+drawTriangle()
+drawPentagon()
+drawHexagon()
 
 //: [Previous](@previous) | [Next](@next)
 

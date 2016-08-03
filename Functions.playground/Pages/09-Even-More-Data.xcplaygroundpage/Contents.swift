@@ -22,13 +22,13 @@
 
  */
 
-
-
-
-
-
-
-
+func drawPolygon(numberOfSides: Int, sideLength: Int) {
+    let rotation = 360 / numberOfSides
+    for _ in 1...numberOfSides {
+        move(sideLength)
+        rotate(rotation)
+    }
+}
 
 /*:
 
@@ -48,9 +48,10 @@
 
  */
 
-
-
-
+drawPolygon(3, sideLength: 75)
+drawPolygon(4, sideLength: 75)
+drawPolygon(5, sideLength: 75)
+drawPolygon(6, sideLength: 75)
 
 /*:
 

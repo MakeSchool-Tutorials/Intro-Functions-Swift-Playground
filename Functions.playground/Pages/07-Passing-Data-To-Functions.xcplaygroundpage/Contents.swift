@@ -56,8 +56,17 @@
  */
 
 func drawSquare(sideLength: Int) {
-
+    let rotation = 360 / 4
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
 }
+drawSquare(150)
 
 /*:
 
@@ -67,15 +76,48 @@ func drawSquare(sideLength: Int) {
 
  */
 
+func drawTriangle(sideLength: Int) {
+    let rotation = 360 / 3
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+}
+drawTriangle(150)
 
+func drawPentagon(sideLength: Int) {
+    let rotation = 360 / 5
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+}
+drawPentagon(50)
 
-
-
-
-
-
-
-
+func drawHexagon(sideLength: Int) {
+    let rotation = 360 / 6
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+    move(sideLength)
+    rotate(rotation)
+}
+drawHexagon(50)
 
 
 //: [Previous](@previous) | [Next](@next)

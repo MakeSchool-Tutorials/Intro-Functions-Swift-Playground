@@ -33,8 +33,32 @@
  */
 //: [Previous](@previous)
 
+// Exploratory exercise but here is something cool and simple
 
+func calculateRotationForPolygon(sides: Int) -> Double {
+    return 360.0 / Double(sides)
+}
 
+func drawPolygon(numberOfSides: Int, sideLength: Int) {
+    let rotation = calculateRotationForPolygon(numberOfSides)
+    for _ in 1...numberOfSides {
+        move(sideLength)
+        rotate(rotation)
+    }
+}
+
+func drawFlower(numberOfSides: Int, sideLength: Int) {
+    var i = 0
+    for _ in 1...numberOfSides {
+        let greyScale = Double(i) / Double(numberOfSides)
+        setColor(red: greyScale, green: greyScale, blue: greyScale)
+        drawPolygon(numberOfSides, sideLength: sideLength)
+        rotate(calculateRotationForPolygon(numberOfSides))
+        i = i + 1
+    }
+}
+
+drawFlower(5, sideLength: 40)
 
 
 
