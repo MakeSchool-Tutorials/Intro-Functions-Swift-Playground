@@ -105,7 +105,7 @@
 
 
 //: ### This is setup code to make the live visualization work!
-Pen.delay = 2
+Pen.delay = 1
 import XCPlayground
 import Foundation
 let results = DrawingScene.setup()
