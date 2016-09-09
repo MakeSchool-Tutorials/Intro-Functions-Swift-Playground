@@ -49,7 +49,7 @@
 
  - callout(Challenge): Let's create a new `drawSquare` function that accepts a parameter for size. This will allow one function to create squares of multiple sizes! We've already started you out in the space below -- `drawSquare` takes one parameter named `sideLength` of type `Int` (a whole number). Fill out the function's body!
 
- Remember, `sideLength` becomes a constant inside of the function's body. You can directly use constants and variables as parameters when you call other functions! Test out your new method with a function call of `drawSquare(150)`.
+ Remember, `sideLength` becomes a constant inside of the function's body. You can directly use constants and variables as parameters when you call other functions! Test out your new method with a function call of `drawSquare(sideLength: 150)`.
 
  - important: Make sure to call the drawSquare function after you have defined it! It needs to be called with a function parameter like we did on the previous page.
 

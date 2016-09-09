@@ -19,7 +19,8 @@
 
  - experiment: What happens if you combine calls to `moveFifty` with calls to `rotateNinety`? Go back to the space above where you originally called `rotateNintey` and try it out! Can you draw anything cool?
 
-  - important: _Make sure each function call is on a separate line and don't forget the parentheses!_
+ 
+ - important: _Make sure each function call is on a separate line and don't forget the parentheses!_
 
  */
 //: [Previous](@previous) | [Next](@next)
