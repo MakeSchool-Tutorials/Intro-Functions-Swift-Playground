@@ -18,7 +18,17 @@
 
 */
 
-
+// This is mostly a personal exploration area for students.
+// I have drawn a triangle below and shown you can actually
+// move & rotate negative amounts.
+//move(steps: 75)
+//rotate(degrees: 120)
+//move(steps: 75)
+//rotate(degrees: 120)
+//move(steps: 75)
+//rotate(degrees: 120)
+//rotate(degrees: -90)
+//move(steps: -100)
 
 /*:
 
@@ -48,15 +58,52 @@
  
 */
 
+// Brute force solution
+func drawTriangle() {
+    move(steps: 75)
+    rotate(degrees: 120)
+    move(steps: 75)
+    rotate(degrees: 120)
+    move(steps: 75)
+    rotate(degrees: 120)
+}
 
+// Brute force solution
+func drawPentagon() {
+    move(steps: 75)
+    rotate(degrees: 72)
+    move(steps: 75)
+    rotate(degrees: 72)
+    move(steps: 75)
+    rotate(degrees: 72)
+    move(steps: 75)
+    rotate(degrees: 72)
+    move(steps: 75)
+    rotate(degrees: 72)
+}
 
+// Cleaner solution -- makes it easy to modify side length
+// and rotation!
+func drawHexagon() {
+    let sideLength = 75
+    let rotation = 60
+    move(steps: sideLength)
+    rotate(degrees: rotation)
+    move(steps: sideLength)
+    rotate(degrees: rotation)
+    move(steps: sideLength)
+    rotate(degrees: rotation)
+    move(steps: sideLength)
+    rotate(degrees: rotation)
+    move(steps: sideLength)
+    rotate(degrees: rotation)
+    move(steps: sideLength)
+    rotate(degrees: rotation)
+}
 
-
-
-
-
-
-
+drawTriangle()
+drawPentagon()
+drawHexagon()
 //: [Previous](@previous) | [Next](@next)
 
 

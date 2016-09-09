@@ -44,87 +44,32 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Exploratory exercise but here is something cool and simple
+
+func calculateRotationForPolygon(sides: Int) -> Double {
+    return 360.0 / Double(sides)
+}
+
+func drawPolygon(numberOfSides: Int, sideLength: Int) {
+    let rotation = calculateRotationForPolygon(sides: numberOfSides)
+    for _ in 1...numberOfSides {
+        move(steps: sideLength)
+        rotate(degrees: rotation)
+    }
+}
+
+func drawFlower(numberOfSides: Int, sideLength: Int) {
+    var i = 0
+    for _ in 1...numberOfSides {
+        let greyScale = Double(i) / Double(numberOfSides)
+        setColor(red: greyScale, green: greyScale, blue: greyScale)
+        drawPolygon(numberOfSides: numberOfSides, sideLength: sideLength)
+        rotate(degrees: calculateRotationForPolygon(sides: numberOfSides))
+        i = i + 1
+    }
+}
+
+drawFlower(numberOfSides: 5, sideLength: 40)
 
 
 

@@ -46,14 +46,45 @@
  */
 
 
+func drawTriangle(sideLength: Int) {
+    let numberOfSides = 3
+    let rotation = 360 / numberOfSides
+    for _ in 1...numberOfSides {
+        move(steps: sideLength)
+        rotate(degrees: rotation)
+    }
+}
+drawTriangle(sideLength: 75)
 
+func drawSquare(sideLength: Int) {
+    let numberOfSides = 4
+    let rotation = 360 / numberOfSides
+    for _ in 1...numberOfSides {
+        move(steps: sideLength)
+        rotate(degrees: rotation)
+    }
+}
+drawSquare(sideLength: 75)
 
+func drawPentagon(sideLength: Int) {
+    let numberOfSides = 5
+    let rotation = 360 / numberOfSides
+    for _ in 1...numberOfSides {
+        move(steps: sideLength)
+        rotate(degrees: rotation)
+    }
+}
+drawPentagon(sideLength: 75)
 
-
-
-
-
-
+func drawHexagon(sideLength: Int) {
+    let numberOfSides = 6
+    let rotation = 360 / numberOfSides
+    for _ in 1...numberOfSides {
+        move(steps: sideLength)
+        rotate(degrees: rotation)
+    }
+}
+drawHexagon(sideLength: 75)
 
 
 /*:

@@ -53,14 +53,13 @@ let twoPiRadiansInDegrees = radiansToDegrees(radians: 2 * M_PI)
 
  */
 
+func degreesToRadians(degrees: Double) -> Double {
+    return degrees / 180 * M_PI
+}
 
-
-
-
-
-//let halfPi = degreesToRadians(degrees: halfPiRadiansInDegrees)
-//let pi = degreesToRadians(degrees: piRadiansInDegrees)
-//let twoPi = degreesToRadians(degrees: twoPiRadiansInDegrees)
+let halfPi = degreesToRadians(degrees: halfPiRadiansInDegrees)
+let pi = degreesToRadians(degrees: piRadiansInDegrees)
+let twoPi = degreesToRadians(degrees: twoPiRadiansInDegrees)
 
 /*:
 
@@ -72,14 +71,22 @@ let twoPiRadiansInDegrees = radiansToDegrees(radians: 2 * M_PI)
 
  */
 
+func calculateRotationForPolygon(sides: Int) -> Double {
+    return 360.0 / Double(sides)
+}
 
+func drawPolygon(numberOfSides: Int, sideLength: Int) {
+    let rotation = calculateRotationForPolygon(sides: numberOfSides)
+    for _ in 1...numberOfSides {
+        move(steps: sideLength)
+        rotate(degrees: rotation)
+    }
+}
 
-
-
-
-
-
-
+// It now works for heptagons! This didn't work before
+// because 360 / 7 = 51.43 and we were using integers
+// so it did integer division where 360 / 7 = 51
+drawPolygon(numberOfSides: 7, sideLength: 75)
 //: - callout(Hint): Remember that you will need to _cast_ `sides` from an `Int` to a `Double`. Swift is very specific about types! You can _cast_ or convert it with `Double(sides)`.
 //:
 //: [Previous](@previous) | [Next](@next)
