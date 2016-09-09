@@ -134,7 +134,7 @@ let twoPiRadiansInDegrees = radiansToDegrees(radians: 2 * M_PI)
 
 //: ### This is setup code to make the live visualization work!
 Pen.delay = 1
-import XCPlayground
+import PlaygroundSupport
 import Foundation
 let results = DrawingScene.setup()
-XCPlaygroundPage.currentPage.liveView = results
+PlaygroundPage.current.liveView = results
