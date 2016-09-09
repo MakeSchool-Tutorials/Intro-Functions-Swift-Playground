@@ -12,7 +12,7 @@
 
  Calling a function with 1 parameter:
 
-    functionName(parameterValue)
+    functionName(parameterName: parameterValue)
 
  Defining a function without parameters:
 

@@ -24,7 +24,7 @@
 
  ## Recap
 
- We can call both `move(steps: 50)` and `rotate(degrees: 90)` to get the same outcome as `moveFifty()` and `rotateNinety()`. You can put _any_ whole number in the parentheses and move custom amounts! The value we put in the parentheses is a _function parameter_.
+ We can call both `move(steps: 50)` and `rotate(degrees: 90)` to get the same outcome as `moveFifty()` and `rotateNinety()`. You can put _any_ whole number in the parentheses and move custom amounts! The value we put in the parentheses is a _function parameter_. `steps` and `degrees` are both _function parameter names_.
 
  ## Pseudocoding
 
