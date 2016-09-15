@@ -1,0 +1,7 @@
+name: Make School Drawing
+identifier: com.makeschool.drawing
+resources: assets # Optional
+cover: cover.jpg # Optional
+chapters:
+ - Functions
+deployment_target: ios10.0 # Optional
