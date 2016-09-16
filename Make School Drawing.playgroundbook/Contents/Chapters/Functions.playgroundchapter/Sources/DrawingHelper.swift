@@ -3,6 +3,7 @@ import SpriteKit
 
 let queue = DispatchQueue(label: "Drawing", attributes: [])
 var firstCommand = true
+let scale = 2
 
 func changeDelay(delay: Double) {
     queue.async { () -> Void in
@@ -48,7 +49,7 @@ public func move(steps: Int) {
     delayStart()
     queue.async { () -> Void in
         delay()
-        Pen.sharedInstance.move(steps)
+        Pen.sharedInstance.move(steps * scale)
     }
 }
 

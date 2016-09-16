@@ -30,12 +30,12 @@ open class Pen {
     open var currentShapeData: ShapeNodeData!
     open var penIsDown = true
     open var speed: useconds_t = 50000
-    open var position = CGPoint(x: 384, y: 512)
+    open var position = CGPoint(x: 384*2, y: 512*2)
     open var rotation: CGFloat = CGFloat(M_PI)
     
     var shapeNodes = [ShapeNodeData?]()
     
-    open var thickness = 1.0 {
+    open var thickness = 2.0 {
         didSet {
             newShapeNode()
         }
