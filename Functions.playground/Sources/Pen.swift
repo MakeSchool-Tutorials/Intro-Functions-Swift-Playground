@@ -30,7 +30,7 @@ open class Pen {
     open var currentShapeData: ShapeNodeData!
     open var penIsDown = true
     open var speed: useconds_t = 50000
-    open var position = CGPoint(x: 160, y: 288)
+    open var position = CGPoint(x: 384, y: 512)
     open var rotation: CGFloat = CGFloat(M_PI)
     
     var shapeNodes = [ShapeNodeData?]()

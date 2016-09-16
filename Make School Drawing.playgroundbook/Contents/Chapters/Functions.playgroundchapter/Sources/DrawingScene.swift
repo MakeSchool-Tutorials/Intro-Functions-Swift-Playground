@@ -56,7 +56,7 @@ open class DrawingScene: SKScene {
     }
     
     open class func setup() -> SKView {
-        let sceneView = SKView(frame: CGRect(x: 0, y: 0, width: 320, height: 568))
+        let sceneView = SKView(frame: CGRect(x: 0, y: 0, width: 768, height: 1024))
         let scene = DrawingScene(fileNamed: "DrawingScene")!
         scene.scaleMode = .aspectFill
         sceneView.presentScene(scene)
