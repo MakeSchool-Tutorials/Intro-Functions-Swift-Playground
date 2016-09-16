@@ -88,9 +88,10 @@ drawPolygon(numberOfSides: 7, sideLength: 75)
 //: - callout(Hint): Remember that you will need to _cast_ `sides` from an `Int` to a `Double`. Swift is very specific about types! You can _cast_ or convert it with `Double(sides)`.
 //:
 //: [Previous](@previous) | [Next](@next)
-//: ### This is setup code to make the live visualization work!
+//#-hidden-code
 Pen.delay = 1
 import PlaygroundSupport
 import Foundation
 let results = DrawingScene.setup()
 PlaygroundPage.current.liveView = results
+//#-end-hidden-code

@@ -70,7 +70,10 @@ func drawFlower(numberOfSides: Int, sideLength: Int) {
 }
 
 drawFlower(numberOfSides: 5, sideLength: 40)
-//: This is setup code to make the live visualization work!
+
+
+
+//#-hidden-code
 Pen.delay = 0.1
 import PlaygroundSupport
 import Foundation
