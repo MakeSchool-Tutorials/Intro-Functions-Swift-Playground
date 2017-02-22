@@ -20,25 +20,28 @@ open class DrawingScene: SKScene {
         
         if lastShapeNode < pen.shapeNodes.count || pen.processing {
             pen.newShapeNode()
-            let image = NSImage(cgImage: background.texture!.cgImage(), size: self.size)
-            image.lockFocus()
-            NSGraphicsContext.current()?.shouldAntialias = true
-            for i in lastShapeNode..<(pen.shapeNodes.count-1) {
-                let data = pen.shapeNodes[i]!
-                if data.numberOfPoints > 0 {
-                    let path = data.path
-                    data.color.set()
-                    path.stroke()
+            if let texture = self.view?.texture(from: background) {
+                let cgImage = texture.cgImage()
+                let image = NSImage(cgImage: cgImage, size: self.size)
+                image.lockFocus()
+                NSGraphicsContext.current()?.shouldAntialias = true
+                for i in lastShapeNode..<(pen.shapeNodes.count-1) {
+                    let data = pen.shapeNodes[i]!
+                    if data.numberOfPoints > 0 {
+                        let path = data.path
+                        data.color.set()
+                        path.stroke()
+                    }
+                    lastShapeNode += 1
+                    pen.shapeNodes[i] = nil
                 }
-                lastShapeNode += 1
-                pen.shapeNodes[i] = nil
-            }
-            image.unlockFocus()
-            
-            background.texture = SKTexture(image: image)
-            
-            if !pen.processing {
-                pen.shapeNodes = [ShapeNodeData?]()
+                image.unlockFocus()
+                
+                background.texture = SKTexture(image: image)
+                
+                if !pen.processing {
+                    pen.shapeNodes = [ShapeNodeData?]()
+                }
             }
         }
     }
