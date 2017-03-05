@@ -39,8 +39,8 @@ public extension SKNode {
    * Runs an action on the node that performs a closure or function after 
    * a given time.
    */
-  public func afterDelay(delay: NSTimeInterval, runBlock block: dispatch_block_t) {
-    runAction(SKAction.sequence([SKAction.waitForDuration(delay), SKAction.runBlock(block)]))
+  public func afterDelay(delay: TimeInterval, runBlock block: @escaping (Void)->Void) {
+    run(SKAction.sequence([SKAction.wait(forDuration: delay), SKAction.run(block)]))
   }
 
   /**
