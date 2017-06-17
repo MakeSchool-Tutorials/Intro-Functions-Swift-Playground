@@ -10,7 +10,7 @@
 
  Grab a pen and some paper. Seriously, it might seem a bit silly but follow along here and actually complete the pen and paper exercise. I'll wait... We'll be doing pen and paper _pseudocode_ exercises throughout this course so we might as well get started now.
 
- - callout(Plan your code): Draw a square on your paper. How would you use _the above functions_ to draw a square? Write it out each step with pen and paper. Read back each line of code to yourself and "perform" each function by hand.
+ - callout(Plan your code): Draw a square on your paper. How would you use _the above functions_ to draw a square? Write out each step with pen and paper. Read back each line of code to yourself and "perform" each function by hand.
 
  Did you successfully draw a square? If not, that's okay -- give it another shot! If you're still having trouble, try slowly drawing a square by hand again. This time, describe to yourself what you are doing as you do it.
 
