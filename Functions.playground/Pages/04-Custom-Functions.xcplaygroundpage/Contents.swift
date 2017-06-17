@@ -33,7 +33,7 @@
 
  ## Defining a function does not execute the code!
 
- You still must call the function to execute it's code. If you followed the steps closely, nothing will have happened to your drawing visualization because you only defined a new function, you never called it. Go back up and add a new line of code to call `drawSquare` (after the closing curly brace of your custom function). Now you should see a square drawing on the screen!
+ You still must call the function to execute its code. If you followed the steps closely, nothing will have happened to your drawing visualization because you only defined a new function, you never called it. Go back up and add a new line of code to call `drawSquare` (after the closing curly brace of your custom function). Now you should see a square drawing on the screen!
 
  ## Some notes
 
