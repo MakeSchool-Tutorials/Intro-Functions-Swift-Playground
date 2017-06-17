@@ -12,17 +12,17 @@ import Foundation
  - note: A full circle is 360 degrees or 2π radians. A half circle is 180 degrees or π radians. A quarter circle is 90 degrees or π/2 radians.
  
  
- - note: `M_PI` is a Swift constant that represents π as a `Double`
+ - note: `Double.pi` is a Swift constant that represents π as a `Double`
 
  */
 
 func radiansToDegrees(radians: Double) -> Double {
-    return radians * 180 / M_PI
+    return radians * 180 / Double.pi
 }
 
-let halfPiRadiansInDegrees = radiansToDegrees(radians: M_PI / 2)
-let piRadiansInDegrees = radiansToDegrees(radians: M_PI)
-let twoPiRadiansInDegrees = radiansToDegrees(radians: 2 * M_PI)
+let halfPiRadiansInDegrees = radiansToDegrees(radians: Double.pi / 2)
+let piRadiansInDegrees = radiansToDegrees(radians: Double.pi)
+let twoPiRadiansInDegrees = radiansToDegrees(radians: 2 * Double.pi)
 
 /*:
 
@@ -49,7 +49,7 @@ let twoPiRadiansInDegrees = radiansToDegrees(radians: 2 * M_PI)
  - callout(Challenge): Write a `degreesToRadians` function below and uncomment the test code. It should accept one parameter called `degrees` of type `Double` and return a `Double`.
 
  
- - note: You can convert from degrees to radians by inverting the math in the above function. Divide by `180` and multiply by `M_PI` (π).
+ - note: You can convert from degrees to radians by inverting the math in the above function. Divide by `180` and multiply by `Double.pi` (π).
 
  */
 
