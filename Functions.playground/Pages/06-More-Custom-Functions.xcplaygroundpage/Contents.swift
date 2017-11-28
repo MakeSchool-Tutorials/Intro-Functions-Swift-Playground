@@ -9,11 +9,11 @@
  So far, we have been using hardcoded `moveFifty()` and `rotateNinety()` functions. While this works, wouldn't it be nicer to be able to say `move(steps: 75)`? Try it out below!
 
  - experiment: Can you move `25` units? `250` units? What about negative values?
- 
- 
+ */
+/*:
  - experiment: Can you figure out how to rotate custom amounts? Can you rotate clockwise instead of counter-clockwise?
- 
- 
+ */
+/*:
  - experiment: Can you combine these to draw a triangle (3 sides)? A pentagon (5 sides)? How about a hexagon (6 sides)?
 
 */
@@ -42,7 +42,8 @@
  ## drawTriangle, drawPentagon, drawHexagon
 
  Did you actually do the above exercise? If not, go back to _Pseudocoding_ and do it. Don't cheat yourself!
-
+ */
+/*:
  - callout(Challenge): Once you have functioning pseudocode for each of the polygons, take the time to translate your planned procedures into Swift. Define the `drawTriangle`, `drawPentagon`, and `drawHexagon` functions below. Make sure to test them!
  
  

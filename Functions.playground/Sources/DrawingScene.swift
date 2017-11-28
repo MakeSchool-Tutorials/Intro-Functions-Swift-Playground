@@ -24,7 +24,7 @@ open class DrawingScene: SKScene {
                 let cgImage = texture.cgImage()
                 let image = NSImage(cgImage: cgImage, size: self.size)
                 image.lockFocus()
-                NSGraphicsContext.current()?.shouldAntialias = true
+                NSGraphicsContext.current?.shouldAntialias = true
                 for i in lastShapeNode..<(pen.shapeNodes.count-1) {
                     let data = pen.shapeNodes[i]!
                     if data.numberOfPoints > 0 {
