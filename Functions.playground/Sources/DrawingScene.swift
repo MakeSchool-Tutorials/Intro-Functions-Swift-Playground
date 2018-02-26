@@ -7,6 +7,7 @@ open class DrawingScene: SKScene {
     var background: SKSpriteNode!
     open var penSprite: SKSpriteNode!
     var lastShapeNode = 0
+    var lastImage: NSImage = #imageLiteral(resourceName: "blank.png")
     
     override open func didMove(to view: SKView) {
         penSprite = childNode(withName: "pen") as! SKSpriteNode
@@ -21,8 +22,7 @@ open class DrawingScene: SKScene {
         if lastShapeNode < pen.shapeNodes.count || pen.processing {
             pen.newShapeNode()
             if let texture = self.view?.texture(from: background) {
-                let cgImage = texture.cgImage()
-                let image = NSImage(cgImage: cgImage, size: self.size)
+                let image = lastImage
                 image.lockFocus()
                 NSGraphicsContext.current?.shouldAntialias = true
                 for i in lastShapeNode..<(pen.shapeNodes.count-1) {
@@ -37,7 +37,8 @@ open class DrawingScene: SKScene {
                 }
                 image.unlockFocus()
                 
-                background.texture = SKTexture(image: image)
+                lastImage = image
+                background.texture = SKTexture(image: lastImage)
                 
                 if !pen.processing {
                     pen.shapeNodes = [ShapeNodeData?]()
