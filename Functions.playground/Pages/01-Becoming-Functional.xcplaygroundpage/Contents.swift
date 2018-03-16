@@ -1,13 +1,13 @@
 /*:
  ![Make School Banner](./swift_banner.png)
- # Becoming Functional
- ## An Introduction to Functions
+ # 関数を学ぶ
+ ## 関数のきほん
 
- Now that you have some control over variables, it's time to move on to _functions_. _Functions_ are chunks of code that you can reuse by _calling the function_. You will be working with a special drawing tool throughout most of this Playground. The pictures will start off simple and build up in complexity as you learn more and experiment.
+ 変数の使い方がいたについてきたところで、今度は関数について学びます。関数はある程度まとまったコードのブロックのようなもので、繰り返し使いまわすことができます。このPlaygroundではお絵かきツールを使って勉強します。最初はシンプルな絵からはじめ、新しいことを覚えるにしたがって徐々に複雑になっていきます。
 
- ## Let's call a function!
+ ## 関数を呼び出してみよう！
 
- We're going to jump right into things so you can call your first function. Enter the following line of code and watch the visualization to see what happens!
+ 関数を呼び出せるようになるために、さっそく始めましょう。次のコードを入力し、画面ビジュアルの変化を見てください。
 
     moveFifty()
 
@@ -17,22 +17,22 @@
 
 /*:
 
- What can we infer about _function calls_ from the line above?
+ これから関数の呼び出しについて何が分かるでしょうか。
 
- ## Anatomy of a function call
+ ## 関数呼び出しの仕組み
 
- A _function call_ looks a lot like a variable but it has parentheses after it. Function calls take the form of:
+ 関数の呼び出しは、変数に似たものに後ろにカッコが付いています。次のような形をとります。
 
     functionName()
 
- In this case, you called a function named `moveFifty`. What happened in the visualization? You should have seen the triangle move `50 units` and leave behind a line.
+ この場合、`moveFifty`という関数を呼び出したことになる。画面ビジュアルではなにが起きましたか？三角形が50単位分動いて、後に線を残したのが見えましたか？
 
- It's important to keep in mind that functions (like variables) must be defined before they are called. We have already defined the `moveFifty()` function for you in another file. `moveFifty()` will work anywhere but you cannot just call `moveThirty()` and expect it to work. A `moveThirty` has not been defined yet. We'll show you how to define your own functions soon but let's focus on calling them for now.
+ 関数は、変数と同様に呼び出す前にしっかりと定義しなければならない、ということを覚えておきましょう。 `moveFifty()`関数の定義は、別のファイルにあらかじめ用意しておきました。`moveFifty()`はどこでも使えますが、いきなり`moveThirty()`と書いても何もおきません。`moveThirty`はまだ定義されていないからです。関数の定義のしかたは後で学びますが、まずは呼び出すことに集中しましょう。
 
- - experiment: What happens if you call the `moveFifty` function again in the space below? What happens if you call it a third time?
+ - experiment: 下のスペースで `moveFifty`関数を再び呼び出すとどうなるでしょうか？3回目はどうでしょう？
 */
 /*:
- - important: _Make sure each function call is on a separate line and don't forget the parentheses!_
+ - important: 関数の呼び出しは一つずつ異なる行にあることを確かめましょう。カッコも忘れずに！
 
  */
 
@@ -43,9 +43,9 @@
 
 /*:
 
- ## What happened?
+ ## 何が起きましたか?
 
- Every time you call `moveFifty` the function's code is executed another time. With 3 calls in a row to `moveFifty` the triangle should move `150 units` in a straight line and leave a path behind it.
+ `moveFifty`関数を呼び出すたびに、その関数のコードが実行されます。ここでは3回連続で `moveFifty` 関数を呼び出したため、三角形は150単位分まっすぐ動き、後ろに線を残します。
 
 */
 //: [Next](@next)

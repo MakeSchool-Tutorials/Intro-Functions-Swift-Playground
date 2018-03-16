@@ -1,20 +1,20 @@
 /*:
  ![Make School Banner](./swift_banner.png)
- # Passing data to functions
+ # 関数にデータを渡す
 
- ## Function parameters
+ ## 関数の変数
 
- Have you been wondering why there are parentheses after function calls? It's not just so they look different from variables. It's because you can sometimes pass data to functions!
+ ところで関数を呼び出すコードの最後にカッコが付いているのを不思議に思いませんでしたか？変数と見た目を変えるためではありませんよ。関数にデータを入れることもあるからです。
 
- So far, we have been using hardcoded `moveFifty()` and `rotateNinety()` functions. While this works, wouldn't it be nicer to be able to say `move(steps: 75)`? Try it out below!
+ ここまでは、ハードコードで`moveFifty()` と `rotateNinety()`を入力してきました。これでも問題ありませんが、 `move(steps: 75)`と入力する方が楽ではないですか？下のスペースで試してみましょう。
 
- - experiment: Can you move `25` units? `250` units? What about negative values?
+  - 実験：`25`単位分動かせますか？`250`単位分はどうでしょう？マイナス値は？
  */
 /*:
- - experiment: Can you figure out how to rotate custom amounts? Can you rotate clockwise instead of counter-clockwise?
+ - 実験：特定の角度を回転させる方法が分かりますか？半時計回りではなく、時計回りで回転させられますか？
  */
 /*:
- - experiment: Can you combine these to draw a triangle (3 sides)? A pentagon (5 sides)? How about a hexagon (6 sides)?
+ - 実験：これらを組み合わせて、三角形(3辺)を描けますか？五角形(5辺)はどうでしょう？六角形(6辺)は？
 
 */
 
@@ -22,29 +22,28 @@
 
 /*:
 
- ## Recap
+ ## 復習
 
- We can call both `move(steps: 50)` and `rotate(degrees: 90)` to get the same outcome as `moveFifty()` and `rotateNinety()`. You can put _any_ whole number in the parentheses and move custom amounts! The value we put in the parentheses is a _function parameter_. `steps` and `degrees` are both _function parameter names_.
+ `move(steps: 50)` と `rotate(degrees: 90)`の両方を呼び出すと、`moveFifty()`と`rotateNinety()`と同じ結果が得られます。カッコに整数を入力して、任意の距離を動かせることができます。カッコに入力した整数のことを関数パラメタと言います。 `steps` と `degrees`はどちらも関数パラメタの名前です。
 
- ## Pseudocoding
+ ## 疑似コード
 
- Let's beef up our polygon drawing skills. Get out a pen and some paper. We'll be writing some pseudocode before we type out any Swift code.
+ 多角形のお絵かきスキルをパワーアップさせましょう。紙とペンを出してください。Swiftのコードを書く前に紙にプロセスを書き出します。
 
- Go through the same exercise we did for squares but do it for triangles (3 sides), pentagons (5 sides), and hexagons (6 sides):
+ 四角を描いたのと同じように、今度は三角(3辺)、五角形(5辺)、六角形(6辺)を描きましょう。
 
- - callout(Plan your code): Draw the polygon with pen and paper. How would you use the `move` and `rotate` functions to draw that polygon? Write out each step. Read back each line of code to yourself and "perform" each function by hand. Did it work?
-
+ - callout(コードを設計しよう): 紙とペンを使って多角形を描いてみましょう。`move`関数や`rotate`関数をどのように使えばうまく描けるでしょうか？ステップをひとつずつ書き出し、それを声に出して読み返しながら模擬コードを手書きで「実行」してみましょう。うまくできましたか？
  
- - callout(Hint): Here's a little hint for those of you who haven't thought about geometry in a while. The angle you rotate is called the polygon's exterior angle. The exterior angle is the angle formed from the extension of one side to the extension of another. 
+  - callout(ヒント): 図形に長らく触れていない方のために補足です。回転角度は多角形の「外角」と言います。外角は辺と辺を伸ばした時に交差する角度と等しいものです。
  
-    You can calculate a polygon's exterior angle with the equation exteriorAngle = 360 / numberOfSides. You'll notice `360 / 4 = 90` which was correct for a square -- try it out on a few other polygons to confirm this should work!
+    多角形の外角はexteriorAngle = 360 / numberOfSidesという式で計算できます。 `360 / 4 = 90`は確かに四角の外角ですね。この式を他の多角形にも当てはめて、正しいことを確認しましょう。
  
  ## drawTriangle, drawPentagon, drawHexagon
 
- Did you actually do the above exercise? If not, go back to _Pseudocoding_ and do it. Don't cheat yourself!
+ ちゃんと手で描きましたか？もし飛ばしたなら「模擬コード」に戻ってやってみましょう。近道しないこと！
  */
 /*:
- - callout(Challenge): Once you have functioning pseudocode for each of the polygons, take the time to translate your planned procedures into Swift. Define the `drawTriangle`, `drawPentagon`, and `drawHexagon` functions below. Make sure to test them!
+  - callout(チャレンジ):それぞれの多角形の疑似コードができたところで、これらをSwiftコードに書き換える作業にうつります。 `drawTriangle`, `drawPentagon`,`drawHexagon` の3つの関数を定義して、それぞれ試してみましょう！
  
  
 */

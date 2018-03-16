@@ -1,24 +1,24 @@
 /*:
  ![Make School Banner](./swift_banner.png)
- # Passing Even More Data to Functions
+ # 関数にもっとデータを渡す
 
- ## Even more parameters
+ ## もっと多くのパラメタ
 
- So far we've seen functions with no parameters and functions with one parameter. Let's try defining a function with two parameters! Can you guess what it might be?
+ さてここまでで、パラメタのない関数か、１つだけパラメタのある関数を見てきましたね。２つのパラメタを持つ関数を定義して見ましょう！どんな書き方か想像できますか？
 
- ## Generalized polygon function
+ ## ポリゴン関数を一般化する
 
- You might have noticed where we have been heading: a `drawPolygon` function with parameters of `numberOfSides: Int` and `sideLength: Int`. Your function should look like this:
+ `numberOfSides: Int`と`sideLength: Int`をパラメタに持つ`drawPolygon`関数を作るには:
 
     func drawPolygon(numberOfSides: Int, sideLength: Int) {
         // "function body"
     }
 
- - note: Notice how we comma-separate the parameters. You can define a function to take in as many parameters as you want -- you just need commas in-between each parameter!
+ - note: パラメタ同士はカンマで区切ります。このようにカンマで区切っていけば、いくらでもパラメタを追加することができますよ！
 
- ## Give it a shot
+ ## 試してみよう！
 
- - callout(Challenge): Create a `drawPolygon` function using the template above. You want to use a for-loop like we did on the last page!
+ - callout(Challenge): 上のテンプレートを使って、`drawPolygon`関数を作りましょう。for ループを使うといいでしょう！
 
  */
 
@@ -32,19 +32,19 @@
 
 /*:
 
- ## Calling functions with more than one parameter
+ ## １つ以上のパラメタを持つ関数を呼び出す
 
- How do you think this function would be called? A reasonable guess is that `drawPolygon(numberOfSides: 3, 100)` would create a triangle with sides of length `100` but no, that won't work!
+ この関数を呼び出したい時は、どうしたらいいでしょうか？`drawPolygon(numberOfSides: 3, 100)` でしょうか？いや、これでは動きません！
 
- The correct (and only way) you can call the function above is with the format `drawPolygon(numberOfSides: 3, sideLength: 100)`.
+ `drawPolygon(numberOfSides: 3, sideLength: 100)`.が正しい呼び出し方です。
 
- ### What???
+ ### どういうこと？
 
- Some of you are now wondering why `drawPolygon(numberOfSides: 3, sideLength: 100)` works and `drawPolygon(numberOfSides: 3, 100)` does not. By default, Swift requires a parameter label for each parameter. If you do not explicitly specify a parameter label, it assumes you want to use the parameter name as the label too. This means the generalized format of calling a function with multiple parameters is:
+ `drawPolygon(numberOfSides: 3, sideLength: 100)`は動くのに、`drawPolygon(numberOfSides: 3, 100)` はどうして動かないのでしょう。デフォルトでは、Swiftはそれぞれのパラメタに、パラメタラベルを必要とします。パラメタの名前を明言しなかったら、Swiftはパラメタの名前をラベルとして使いたいのだと推測してしまうのです。つまり、複数のパラメタを持つ関数の一般的フォーマットは下のようになります:
 
     functionName(parameterOneName: parameterOneValue, parameterTwoName: parameterTwoValue)
 
- - callout(Challenge): Test your `drawPolygon` function below and make sure it works!
+ - callout(Challenge): `drawPolygon` 下に呼び出して、動くか確かめて見ましょう！
 
  */
 
@@ -54,41 +54,41 @@
 
 /*:
 
- ## Parameter labels in function calls
+ ## パラメタラベル
 
- Swift will automatically require a parameter label for every parameter. The label defaults to the parameter's internal name. Technically, when you define a function as:
+ Swiftでは、全てのパラメタに対してパラメタラベルが必要です。ラベルは、関数の中で使うパラメタの名前です。もう少し詳しくいうと、下のように関数を定義するのは、
 
     func drawPolygon(numberOfSides: Int, sideLength: Int)
 
- you are using a shorthand for:
+ この下の関数の定義の仕方の短縮系なのです。
 
     func drawPolygon(numberOfSides numberOfSides: Int, sideLength sideLength: Int)
 
- ## More control over parameter labels
+ ## パラメタラベルをマスターする
 
- ### Specify a custom parameter label
+ ### カスタムのパラメタラベルを明言する
 
- You could even use a parameter label that is different than the parameter name if you wanted to! You would need to define your function with the format:
+ もし変えたければ、パラメタ名とパラメタラベルは別の名前にできます！下のようなフォーマットで書く必要があります:
 
     func drawPolygon(sides numberOfSides: Int, sideLength: Int)
 
- This would be called with:
+ 呼ぶ時は下のように呼び出します:
 
     drawPolygon(sides: 3, sideLength: 100)
  
- - callout(Hint): Custom paramter labels can be specified for any paramter, not just the first one.
+ - callout(Hint): 初めのパラメタだけではなくて、他のパラメタにも同じようにカスタムした名前をつけることができますよ！
 
- ### Removing the parameter label from a parameter
-
- Or you could tell Swift you do not want a label for a parameter by defining your function with the format:
+ ### パラメタをパラメタラベルから取り除く
+ 
+ もしくは、ラベルを使いたくない時は、下のフォーマットを使うこともできます:
 
     drawPolygon(numberOfSides: Int, _ sideLength: Int)
 
- This would be called with:
+ 上の関数は、下のように呼び出されます。
 
     drawPolygon(numberOfSides: 3, 100)
  
- - callout(Hint): `_` is the way of specifying no label is required.
+ - callout(Hint): `_` は、ラベルが必要ないということを示す方法です。
 
  */
 //: [Previous](@previous) | [Next](@next)

@@ -1,44 +1,54 @@
 /*:
  ![Make School Banner](./swift_banner.png)
- # Create something cool
+ # かっこいい絵を描こう
  
- - experiment: Use everything you learned to draw something awesome! See below for a few more functions you can use to bring your art to life!
+ - これまでに習ったことを使って、何かかっこいい絵を書いてみましょう！他にも使えるツールを紹介します:
  
- ## Drop and lift the pen
+ ## ペンを置いたり離したりする
  
- - callout(Drop the pen): `penDown()`
+ - callout(ペンを置く): `penDown()`
  */
+
 /*:
- - callout(Lift the pen): `penUp()`
+ - callout(ペンを離す): `penUp()`
  */
+
 /*:
- - note: The pen starts out down.
+ - note: 初めはペンを置いた状態からスタートしています。
  
- ## Moving the pen
+ ## ペンを動かす
  
- - callout(Move by a number of steps): `move(steps: Int)`
- */
+ - callout(stepだけペンを動かす): `move(steps: Int)`
+*/
+ 
 /*:
- - callout(Move directly to coordinates): `moveTo(x: Int, y: Int)`
+ - callout(x, yへペンを動かす): `moveTo(x: Int, y: Int)`
  */
+
 /*:
- - callout(Rotate heading by an angle): `rotate(degrees: Int)`
+ - callout(回転させる): `rotate(degrees: Int)`
  
- ## Change the pen
+ ## ペンを変える
  
- - callout(Set color of pen): `setColor(red: Double, green: Double, blue: Double)`
+ - callout(ペンの色を変える): `setColor(red: Double, green: Double, blue: Double)`
+
  */
+
 /*:
- - note: Each value should be between 0 and 1. eg. `setColor(red: 0.0, green: 0.0, blue: 0.0)` would change the pen to be black. `setColor(red: 1.0, green: 0.0, blue: 0.0)` would change the pen to be red.
+ - note: それぞれの値は0から1の間で設定します。`setColor(red: 0.0, green: 0.0, blue: 0.0)`は黒色に、 `setColor(red: 1.0, green: 0.0, blue: 0.0)`は赤色になります。
  */
+
 /*:
- - callout(Set thickness of pen): `set(thickness: Double)`
+ - callout(ペンの太さ): `set(thickness: Double)`
  
  */
+
 //: [Previous](@previous)
+
 /*:
  
- - callout(Challenge): Draw something awesome in the space below!
+ - callout(Challenge):ここにコードを書いていきましょう！
+
  
  */
 

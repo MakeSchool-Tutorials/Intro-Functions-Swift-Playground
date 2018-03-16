@@ -1,28 +1,28 @@
 /*:
  ![Make School Banner](./swift_banner.png)
- # Draw a Square!
+ # 四角を描こう
 
- We now know how to use two functions:
+ これで2つの関数の使い方を覚えました。
 
     moveFifty()
 
     rotateNinety()
 
- Grab a pen and some paper. Seriously, it might seem a bit silly but follow along here and actually complete the pen and paper exercise. I'll wait... We'll be doing pen and paper _pseudocode_ exercises throughout this course so we might as well get started now.
+ さあ、紙とペンを準備しましょう。いや、本当です。不思議に思うかもしれませんが、だまされたと思って紙とペンを取ってきてください。このセッションでは紙とペンを使った疑似コードの練習を行います。
 
- - callout(Plan your code): Draw a square on your paper. How would you use _the above functions_ to draw a square? Write out each step with pen and paper. Read back each line of code to yourself and "perform" each function by hand.
+ - callout(コードを設計する): 紙に四角を描きましょう。先程の関数を使って四角を描けるでしょうか？各ステップを紙とペンで書き出してみましょう。自分のコードを読み返し、それを紙上で「実行」してみましょう。
 
- Did you successfully draw a square? If not, that's okay -- give it another shot! If you're still having trouble, try slowly drawing a square by hand again. This time, describe to yourself what you are doing as you do it.
+ きちんと四角が描けましたか？すぐに描けなくても大丈夫、もう一度トライしてみましょう。手こずってしまったら、落ち着いてゆっくりと、もう一度手書きで四角を描いてみましょう。手で描きながら、何をしているか声に出して説明してみてください。
 
- ## Pseudocode
+ ## 疑似コード
 
- Did you actually do the above exercise? If not, go back to _Plan your code_ and do it. We're working to instill good habits in you as you learn to code!
+ 上のお題は完了しましたか？もし終わってないのなら、「コードを設計する」まで戻ってやりましょう。これを機にぜひプログラマーとしての良いクセを付けてもらいたいのです！
 
- Planning out code on paper or a whiteboard is generally called _pseudocoding_. The purpose of _pseudocoding_ is not to write perfect, syntactically-correct code. In fact, it's better if you don't hold yourself back by trying to get everything perfect. _Psuedocoding_ is a planning exercise for coding. It helps you make a plan before you get started coding. Most people would agree that you shouldn't take a road trip without some sort of navigation --  coding is the same! Make sure you have a rough idea of where you're going before you start typing.
+ 紙やホワイトボードにコードを書きだすことを「疑似コード」と言います。疑似コードの目的は完璧なコードを書くことではありません。かえって完璧なコードにこだわり過ぎない方が良いのです。疑似コードは、コードを書き始める前にコードの設計を考えるためのものです。旅行に出かける前に地図を確認するのとちょうど同じで、タイプを始める前にどんなコードにしたいのか頭を整理しましょう。
+ 
+ ## コードを書こう！
 
- ## Coding time!
-
- - callout(Challenge): Now that you're pretty sure you have some working pseudocode, it's time to put it to the test... Try out the procedure you created in the space below. Remember, this is real coding again -- syntax matters! Each function call should be on a separate line and don't forget the parentheses.
+ - callout(チャレンジ):そこそこの疑似コードができたところで、いよいよ試してみましょう...下のスペースに作った疑似コードを入力してみましょう。 ここからは本物のコードですので丁寧に描きましょう。改行とカッコを忘れずに。
 
  */
 

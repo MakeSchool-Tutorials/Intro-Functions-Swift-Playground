@@ -1,31 +1,31 @@
 /*:
  ![Make School Banner](./swift_banner.png)
- # Passing Data to Functions
+ # 関数にデータを入れ込む
 
- ## Defining a function
+ ## 関数を定義する
 
- Previously, we've seen how to call functions with and without parameters but only how to define a function with no parameters. Let's review really quickly
+ これまでは、パラメタのある関数、ない関数を呼び出し、パラメタのない関数は定義の書き方も覚えました。
 
- Calling a function without parameters:
+ パラメタのない関数を呼び出す：
 
     functionName()
 
- Calling a function with 1 parameter:
+ パラメタを1つもつ関数を呼び出す：
 
     functionName(parameterName: parameterValue)
 
- Defining a function without parameters:
+ パラメタのない関数を定義する：
 
     func functionName() {
        // "function body"
        // function's code goes here
     }
 
- Where `func` is the keyword used to define a function, followed by the function name, an empty pair of parentheses, and a pair of curly braces (`{` `}`) surrounding the code contained in the function.
+ `func`のキーワードではじめ、関数の名前、カッコ、と入力し、関数のなかのコードは中カッコで挟みます。
 
- ## Adding a parameter to your function definition
+ ## 関数の定義にパラメタを組み込む
 
- The general form of a function with one parameter is:
+ 1つのパラメタをもつ関数の一般的な形：
 
      func functionName(parameterOneName: parameterOneType) {
          // "function body"
@@ -33,25 +33,26 @@
          // value passed in becomes a constant with the name parameterOneName
      }
 
- If you compare this to the earlier functions we defined, you'll see the difference is the parameter name and type inside of the parentheses. It starts off with the same keyword `func`, followed by the function name, parentheses and curly braces. Remember, anything "inside" the curly braces gets indented once (one press of the tab key if Xcode doesn't do it for you automatically).
+ これを先程書いた関数の定義と比べてみると、カッコの中にパラメタの名前とタイプが入力されているのが分かります。最初は同じキーワード`func`で書き出し、関数の名前、カッコ、中カッコと続きます。中カッコの中身はインデントすることを忘れずに！(Xcodeが自動的にインデントしない場合は、キーを押すだけ簡単にできます)これを先程書いた関数の定義と比べてみると、カッコの中にパラメタの名前とタイプが入力されているのが分かります。最初は同じキーワード`func`で書き出し、関数の名前、カッコ、中カッコと続きます。中カッコの中身はインデントすることを忘れずに！(Xcodeが自動的にインデントしない場合は、tabキーを押すだけで簡単にできます)
+ 
+ 前に勉強した変数の定義と同じように、パラメタの定義でもデータタイプを指定する必要があり、異なるデータタイプの関数を呼び出すことはできません。パラメタの名前もまた、変数の名前に似ています。分かりやすく、短い名前を心掛けましょう。他のプロクラマーが見ても、何の役割があるのか一目瞭然であるのが理想的です。
 
- A lot like the variables we defined before, parameters must specify their data type and you cannot call a function with anything of a different type. Parameter names are similar to variable names -- they should be concise and descriptive. Another programmer should know what they are going to be used for just by looking at their name.
+ ### データタイプの復習
 
- ### Quick review of data types
+ データタイプはプログラミングに使われている情報の種類を示します。変数や定数の定義、値の修正、関数にパラメタを入れ込む場合に重要となります。これまで3つのデータタイプを学びましたね。
 
- Data types describe information used in programming. They are important when defining variables/constants, performing operations on values, and passing parameters into functions. The basic data types you should be familiar with so far are:
+  - `Int`: 整数、割り算で少数が出た場合は小数点以下が必ず切り捨てられます！
+  - `Double`: 少数
+  - `String`: 英数字やその他記号の文字列、たとえ数字だけの文字列であっても計算式は作れない。Stringはダブルクオーテーションで挟まれている (`"これはstring!"`)
 
-  - `Int`: whole numbers, when divided they output integer division -- result is always rounded down!
-  - `Double`: numbers with a decimal place
-  - `String`: combination of letters, numbers, and other characters -- cannot be used for arithmetic even if the `String` contains only numbers! String types must be surrounded with double quotes (`"this is a string!"`)
+ ## より多目的なdrawSquare
 
- ## A more versatile drawSquare
+ - callout(チャレンジ):大きさを規定するパラメタを含む、新しい`drawSquare`関数を作りましょう。これでひとつの関数で色々な大きさの四角形を描くことができます！下のスペースに途中まで書いています。`drawSquare`は`sideLength`という `Int`のデータタイプ(整数)のパラメタです。関数の中身を書き込みましょう。
 
- - callout(Challenge): Let's create a new `drawSquare` function that accepts a parameter for size. This will allow one function to create squares of multiple sizes! We've already started you out in the space below -- `drawSquare` takes one parameter named `sideLength` of type `Int` (a whole number). Fill out the function's body!
+ `sideLength`は関数の中で定数となります。定数や変数は他の関数を呼び出す時にパラメタの役割をします。`drawSquare(sideLength: 150)`という関数を呼び出して新しい手法を試してみましょう。
 
- Remember, `sideLength` becomes a constant inside of the function's body. You can directly use constants and variables as parameters when you call other functions! Test out your new method with a function call of `drawSquare(sideLength: 150)`.
+ - 重要：定義を書いた後にはdrawSquare関数を呼び出すことを忘れずに！前のページで練習した通り、パラメタを含む形で呼び出す必要があります。
 
- - important: Make sure to call the drawSquare function after you have defined it! It needs to be called with a function parameter like we did on the previous page.
 
  */
 
@@ -61,9 +62,9 @@ func drawSquare(sideLength: Int) {
 
 /*:
 
- ## All working?
+ ## すべてうまくいきましたか？
 
- - callout(Challenge): Once you have the resizable `drawSquare` function working, do the same for `drawTriangle`, `drawPentagon`, and `drawHexagon` below.
+ - callout(チャレンジ): 大きさを調整できる`drawSquare`のコードがうまく実行できたら、`drawTriangle`, `drawPentagon`, `drawHexagon`も同じように変更してみましょう。
 
  */
 

@@ -1,47 +1,48 @@
 /*:
  ![Make School Banner](./swift_banner.png)
- # Repeating Code
+ # コードを繰り返す
 
- ## A quick intro to "loops"
+ ## "loops" の簡単な紹介
 
- Now that you've rewritten your polygon functions a few times, you may have started to see a general pattern for drawing polygons. Grab your pen and paper again, let's see if we can reduce the number of lines of code we are using.
+ 何度かポリゴン関数を書き直しましたが、もしかしたらもっと一般的にポリゴンが描きたくなるかもしれません、紙とペンを使って、今使っているコードをどうしたら減らすことができるか考えてみましょう。
 
- This time, see if you can rewrite each of your draw functions (`drawTriangle`, `drawSquare`, `drawPentagon`, and `drawHexagon`) so that they only reference `move` and `rotate` once each. How can you do this? We're going to add a new tool to your pseudocode toolbox: repeat _x_ times.
+ 今回は、`move`と`rotate`を１度ずつしか使わず、`drawTriangle`, `drawSquare`, `drawPentagon`, and `drawHexagon`を完成させる方法を考えてみましょう。
 
- If you were to write:
-
-    repeat 4 times
-        move 10
-
- we would expect it to move a total of 40 units (10 units at a time).
-
- - callout(Plan your code): As usual, write it down then "run the code" yourself by following the directions as you hopefully draw out the polygon.
-
- ## Looking good?
-
- Time to translate this pseudocode into Swift! In Swift, the following pseudocode:
+ 次のように書くと...
 
     repeat 4 times
         move 10
 
- would become:
+ 全部で40単位分(一度に10単位ずつ)動くことになります。
+
+  - callout(コードを設計する)：これまで通り、紙に書き出した疑似コードを自分で読み返し、コードを「実行」してポリゴンを描いてみましょう。
+
+ ## いい感じ？
+
+ 疑似コードをSwiftに変換しましょう。
+
+    repeat 4 times
+        move 10
+
+ Swiftでは、上の模擬コードは下のように書き換えられます
 
     for _ in 1...4 {
         move(10)
     }
 
- We'll go further into the details of this _for-loop_ syntax in later exercises. Right now, all you need to know is that you can generalize it as this:
+ for-loop構文は後で詳しく勉強しますが、今はこのように一般化できる、という事だけ知っておきましょう。
 
     for _ in 1...numberOfTimes {
         // "for-loop body"
         // code repeated numberOfTimes goes here
     }
 
- Like function bodies, the for-loop's body is enclosed in curly braces. Also, like function bodies, we indent an extra time each time we open a curly brace!
+ 関数の中身のように、for-loopの中身は中カッコで挟まれます。また、関数の中身と同じように、中カッコの中はインデントをします。
 
- ### Go for it!
+ ### やってみよう！
 
- - callout(Challenge): Now that you know how to implement "for-loops" (repeat a few lines of code), reimplement your `drawTriangle`, `drawSquare`, `drawPentagon`, and `drawHexagon` methods below. Make sure they are still resizeable and be sure to test them out!
+ - callout(チャレンジ):"for-loops"の書き方が分かったところで(何行かのコードの繰り返し)、`drawTriangle`, `drawSquare`, `drawPentagon`,  `drawHexagon`の手法をそれぞれ修正してみましょう。修正後も大きさを調整できる関数であることを確かめましょう！
+
 
  */
 
@@ -58,7 +59,7 @@
 
 /*:
 
- - callout(Hint): Your triangle `drawTriangle` function should use `1...3` in the _for-loop_ syntax above. Your `drawSquare` function should use `1...4`
+  - callout(ヒント): 三角形を描く`drawTriangle`関数には上のfor-loop構文で`1...3`を使います。`drawSquare`関数は`1...4`を使います。
 
  */
 //: [Previous](@previous) | [Next](@next)

@@ -1,9 +1,9 @@
 /*:
  ![Make School Banner](./swift_banner.png)
- # Combining Function Calls
- ## Rotate by ninety degrees
+ # 関数呼び出しの組み合わせ
+ ## 90度で回転
 
- Let's try a new function: `rotateNinety`. Remember, function calls are followed by parentheses! Enter the following line of code and watch the visualization to see what happens!
+ 新しい関数`rotateNinety`を使ってみましょう。関数の呼び出しは必ずカッコを付けること。次のコードを入力し、画面ビジュアルの変化を見てみましょう。
 
     rotateNinety()
 
@@ -13,14 +13,14 @@
 
 /*:
 
- ## What happened?
+ ## 何が起きましたか？
 
- The triangle should have rotated the triangle ninety degrees counter-clockwise (to the left or in the opposite direction of a clock's hands). The `rotateNinety` function has a different name than the `moveFifty` function and each function executes a different set of code.
+ 三角形が半時計回り(左回りに)に90度回転したでしょうか？ `rotateNinety` 関数は`moveFifty`関数と呼び名が異なり、それぞれ違ったコードを実行します。
 
- - experiment: What happens if you combine calls to `moveFifty` with calls to `rotateNinety`? Go back to the space above where you originally called `rotateNintey` and try it out! Can you draw anything cool?
+ - experiment: `moveFifty`関数の呼び出しと`rotateNinety`関数の呼び出しを組み合わせるとどうなるでしょう？
  */
 /*:
- - important: _Make sure each function call is on a separate line and don't forget the parentheses!_
+ - important: 関数の呼び出しをそれぞれ異なる行に書き、くれぐれもカッコを忘れずに！
 
  */
 //: [Previous](@previous) | [Next](@next)

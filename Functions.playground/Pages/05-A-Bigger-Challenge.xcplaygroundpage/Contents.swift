@@ -1,15 +1,15 @@
 /*:
  ![Make School Banner](./swift_banner.png)
- # A "bigger" challenge
+ # 「大きな」チャレンジ
 
- ## Drawing a bigger square
+ ## もっと大きな四角を描く
 
- - callout(Challenge): Time to put those function skills to the test. In the last page you should have defined a `drawSquare` function. Define a `drawBigSquare` function in the space below. This new function should draw a square with sides _twice_ the length of your previous `drawSquare` function.
+ - callout(チャレンジ): 新しいスキルを試してみましょう。前のページでは `drawSquare`関数を定義しましたね。下のスペースで`drawBigSquare`の関数を定義してみましょう。今度は、`drawSquare`関数と比べて辺の長さが2倍の四角を描けるようにしましょう。
  */
 /*:
- - important: Remember to call the `drawBigSquare` function once it's defined and make sure the visualization works as expected.
+  - 重要：ひとたび `drawBigSquare`関数が定義できたら、呼び出しをして画面上にイメージ通りの四角が描かれるか確認しましょう。
 
- Feel free to reference the previous page if you need some help!
+ 前のページの内容も参考にしましょう！
 
  */
 

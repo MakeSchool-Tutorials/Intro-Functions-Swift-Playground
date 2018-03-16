@@ -1,18 +1,18 @@
 import Foundation
 /*:
  ![Make School Banner](./swift_banner.png)
- # Returning data
+ # データを返す
 
- ## Return values
+ ## 戻り値
 
- There's one last thing functions can do: return data! Great code is readable code and returning values from functions will help you get things organized.
+ 最後にもう一つ、関数ができることがあります。データを返すことです！良いコードの条件は読みやすいことで、データを返す関数を使うと、綺麗に整理されたコードになります。
 
- Let's take a look at how to define a function with a return value.
+ どのように定義をすれば良いか見てみましょう。
 
- - note: A full circle is 360 degrees or 2π radians. A half circle is 180 degrees or π radians. A quarter circle is 90 degrees or π/2 radians.
+ - note: 円の一周は360度か、2πラジアンです。半周は180度で、πラジアンです。四分の一の円は、90度でπ/2ラジアンです。
  */
 /*:
- - note: `Double.pi` is a Swift constant that represents π as a `Double`
+ - note: `Double.pi` はSwiftiが持つ定数で、Double型のπを表します。
 
  */
 
@@ -26,30 +26,30 @@ let twoPiRadiansInDegrees = radiansToDegrees(radians: 2 * Double.pi)
 
 /*:
 
- ## Defining functions with return values
+ ## 戻り値を持つ関数を定義する
 
- The general form of a function with a return value is:
+ 戻り値を持つ関数の書き方:
 
     func functionName() -> ReturnType {
         // "function body"
         return valueToReturn
     }
 
- You can add as many parameters as you would like but the important part is:
+ パラメタはいくつでも追加できますが、大事なポイントがあります。
 
- 1. `-> ReturnType` where `ReturnType` is the data type of the value you are returning (`Int`, `Double`, `String`, etc)
- 2. `return valueToReturn` where `return` is a required keyword telling Swift to immediately exit the function and give the value back to it's caller. `valueToReturn` must be the same type as you specified earlier in `ReturnType`
+ 1. `-> ReturnType`: `ReturnType`には返したい値のデータ型を入力します。 (`Int`, `Double`, `String`, など)
+ 2. `return valueToReturn`: `return`は、Swiftにこの行で関数を終了して、`return` の後に書かれている値を返してね、と命令します。`valueToReturn`は`ReturnType`で定義したデータ型と同じでなくてはいけません。
 
- - important: The function must return a value of `ReturnType` with the `return` keyword no matter what!
+ - 重要: この関数は何があっても`ReturnType`を返さなくてはいけません！
 
- ## Degrees to radians
+ ## 角度からラジアンへ
 
- It's time for you to define your own function with a return value!
+ 戻り値を持つ関数を定義してみましょう！
 
- - callout(Challenge): Write a `degreesToRadians` function below and uncomment the test code. It should accept one parameter called `degrees` of type `Double` and return a `Double`.
+ - callout(Challenge): 下に`degreesToRadians`を書いて、テストコードをアンコメントしましょう。 `Double`型の`degrees`をパラメタとして受け取り、`Double`を返します。
  */
 /*:
- - note: You can convert from degrees to radians by inverting the math in the above function. Divide by `180` and multiply by `Double.pi` (π).
+ - note: 角度からラジアンへの変換の計算は、上に書いてある関数の計算を逆にして使えますね。`180`で割って、`Double.pi` (π)をかける
 
  */
 
@@ -64,11 +64,11 @@ let twoPiRadiansInDegrees = radiansToDegrees(radians: 2 * Double.pi)
 
 /*:
 
- - note: Half of π is roughly 1.57, π is roughly 3.14, 2π is roughly 6.28. Make sure your function returns the correct values!
+ - note: 1/2πはだいたい1.57、π はだいたい3.14, 2πは約6.28です。書いた関数がこの数字と合っているか確かめましょう。
 
- ## One more drawPolygon rewrite
+ ## drawPolygonを書き直す
 
- - callout(Challenge): Write a `calculateRotationForPolygon` function below that takes one parameter called `sides` of type `Int` and returns a `Double`. Copy your old `drawPolygon` function over and use `calculateRotationForPolygon`.
+ - callout(Challenge): `calculateRotationForPolygon`関数を下に作ります。`Int`型の`sides`をパラメタとして受け取り、`Double`の値を返します。前に書いた `drawPolygon`関数をコピーしてきて使いましょう。
 
  */
 
@@ -80,7 +80,8 @@ let twoPiRadiansInDegrees = radiansToDegrees(radians: 2 * Double.pi)
 
 
 
-//: - callout(Hint): Remember that you will need to _cast_ `sides` from an `Int` to a `Double`. Swift is very specific about types! You can _cast_ or convert it with `Double(sides)`.
+//: - callout(Hint): `sides(辺の数)`は `Int` から `Double` へ _キャスト(変換)_  する必要があります。Swiftはデータ型にとても厳しいのです！`Double(sides)`と書くことで、_キャスト(変換)_ することができます。
+
 //:
 //: [Previous](@previous) | [Next](@next)
 
