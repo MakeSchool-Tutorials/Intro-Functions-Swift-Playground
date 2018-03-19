@@ -107,3 +107,4 @@ public func set(thickness: Double) {
         Pen.sharedInstance.setThickness(thickness)
     }
 }
+
