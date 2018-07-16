@@ -12,7 +12,7 @@ import Foundation
  - note: 円の一周は360度か、2πラジアンです。半周は180度で、πラジアンです。四分の一の円は、90度でπ/2ラジアンです。
  */
 /*:
- - note: `Double.pi` はSwiftiが持つ定数で、Double型のπを表します。
+ - note: `Double.pi` はSwiftが持つ定数で、Double型のπを表します。
 
  */
 
