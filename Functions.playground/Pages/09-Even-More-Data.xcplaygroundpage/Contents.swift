@@ -11,7 +11,7 @@
  `numberOfSides: Int`と`sideLength: Int`をパラメタに持つ`drawPolygon`関数を作るには:
 
     func drawPolygon(numberOfSides: Int, sideLength: Int) {
-        // "function body"
+        // "関数の中身"
     }
 
  - note: パラメタ同士はカンマで区切ります。このようにカンマで区切っていけば、いくらでもパラメタを追加することができますよ！
@@ -76,7 +76,7 @@
 
     drawPolygon(sides: 3, sideLength: 100)
  
- - callout(Hint): 初めのパラメタだけではなくて、他のパラメタにも同じようにカスタムした名前をつけることができますよ！
+ - callout(ヒント): 初めのパラメタだけではなくて、他のパラメタにも同じようにカスタムした名前をつけることができますよ！
 
  ### パラメタをパラメタラベルから取り除く
  
@@ -88,7 +88,7 @@
 
     drawPolygon(numberOfSides: 3, 100)
  
- - callout(Hint): `_` は、ラベルが必要ないということを示す方法です。
+ - callout(ヒント): `_` は、ラベルが必要ないということを示す方法です。
 
  */
 //: [Previous](@previous) | [Next](@next)

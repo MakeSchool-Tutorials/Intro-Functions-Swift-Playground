@@ -17,8 +17,8 @@
  パラメタのない関数を定義する：
 
     func functionName() {
-       // "function body"
-       // function's code goes here
+       // "関数の中身"
+       // 関数のコードはここに入力
     }
 
  `func`のキーワードではじめ、関数の名前、カッコ、と入力し、関数のなかのコードは中カッコで挟みます。
@@ -27,10 +27,10 @@
 
  1つのパラメタをもつ関数の一般的な形：
 
-     func functionName(parameterOneName: parameterOneType) {
-         // "function body"
-         // function's code goes here
-         // value passed in becomes a constant with the name parameterOneName
+    func functionName(parameterOneName: parameterOneType) {
+         // "関数の中身"
+         // 関数のコードはここに入力
+         // 受け取られた値は、この関数の中では parameterOneName という名前で表現されます。
      }
 
  これを先程書いた関数の定義と比べてみると、カッコの中にパラメタの名前とタイプが入力されているのが分かります。最初は同じキーワード`func`で書き出し、関数の名前、カッコ、中カッコと続きます。中カッコの中身はインデントすることを忘れずに！(Xcodeが自動的にインデントしない場合は、tabキーを押すだけで簡単にできます)
@@ -51,7 +51,7 @@
 
  `sideLength`は関数の中で定数となります。定数や変数は他の関数を呼び出す時にパラメタの役割をします。`drawSquare(sideLength: 150)`という関数を呼び出して新しい手法を試してみましょう。
 
- - 重要：定義を書いた後にはdrawSquare関数を呼び出すことを忘れずに！前のページで練習した通り、パラメタを含む形で呼び出す必要があります。
+ - important: （重要）定義を書いた後にはdrawSquare関数を呼び出すことを忘れずに！前のページで練習した通り、パラメタを含む形で呼び出す必要があります。
 
 
  */

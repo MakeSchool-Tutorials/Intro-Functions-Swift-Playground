@@ -17,10 +17,10 @@
 
  三角形が半時計回り(左回りに)に90度回転したでしょうか？ `rotateNinety` 関数は`moveFifty`関数と呼び名が異なり、それぞれ違ったコードを実行します。
 
- - experiment: `moveFifty`関数の呼び出しと`rotateNinety`関数の呼び出しを組み合わせるとどうなるでしょう？
+ - experiment: （実験）`moveFifty`関数の呼び出しと`rotateNinety`関数の呼び出しを組み合わせるとどうなるでしょう？
  */
 /*:
- - important: 関数の呼び出しをそれぞれ異なる行に書き、くれぐれもカッコを忘れずに！
+ - important: （重要）関数の呼び出しをそれぞれ異なる行に書き、くれぐれもカッコを忘れずに！
 
  */
 //: [Previous](@previous) | [Next](@next)
